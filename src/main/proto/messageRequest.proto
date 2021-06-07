@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package io.netty.protocol.protobuf;
+
+option java_multiple_files = true;
+option java_package = "com.netty.serializer.protobuf.generated";
+
+message MessageRequest {
+
+  string xid = 1;
+  /**
+  * The Branch id.
+  */
+  int64 branchId = 2;
+
+  /**
+   * The Branch type.
+   */
+  /**
+   * The Resource id.
+   */
+  string resourceId = 3;
+
+  /**
+   * The Application data.
+   */
+  string applicationData = 4;
+}
